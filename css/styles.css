@@ -260,14 +260,23 @@ ul {
 }
 
 .team_inf-link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-inf-item {
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  background: #4d5ae5;
-  background-size: 40px;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-color: #4d5ae5;
 }
 
 .icon {
+  width: 16px;
+  height: 16px;
 }
 
 .team-post-title {
@@ -360,7 +369,13 @@ ul {
   padding: 100px 0;
 }
 
+.conclusion-container {
+  /*display: flex;
+  align-items: center;*/
+}
+
 .conclusion-logo-blue {
+  display: inline-block;
   color: #4d5ae5;
   font-family: Raleway, sans-serif;
   font-size: 18px;
@@ -368,8 +383,8 @@ ul {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  display: inline-block;
   margin-bottom: 16px;
+  /*margin-right: 269px;*/
 }
 
 .conclusion-logo {
@@ -383,12 +398,48 @@ ul {
 }
 
 .conclusion-text {
+  display: block;
   color: #f4f4fd;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  display: block;
   padding-top: 17.5px;
   width: 264px;
+}
+
+.conclusion-social-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-media-text {
+  color: #fff;
+  max-width: 264px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+
+.social-media-list {
+  display: flex;
+  gap: 16px;
+}
+
+.social-media-link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-media-item {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
 }
