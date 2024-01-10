@@ -99,11 +99,23 @@ ul {
   color: #2e2f42;
   padding: 24px 0px;
   display: block;
+  position: relative;
 }
 
 .summit-menu-link:hover,
 .summit-menu-link:focus {
   color: #404bbf;
+}
+
+.summit-menu-link:active::after {
+  content: " ";
+  width: 100%;
+  border-radius: 2px;
+  background: #404bbf;
+  height: 4px;
+  position: absolute;
+  bottom: 0;
+  transform: translateX(-100%);
 }
 
 .contacts-menu {
@@ -211,6 +223,20 @@ ul {
   gap: 24px;
 }
 
+.features-picture {
+  display: flex;
+  border-radius: 4px;
+  border: 1px solid #8e8f99;
+  background: #f4f4fd;
+  height: 112px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.icon-features {
+}
+
 .features-list-item {
   width: calc((100% - 24px * 3) / 4);
 }
@@ -250,6 +276,12 @@ ul {
 
 .team-information {
   padding: 32px 0;
+}
+
+.team-information:hover {
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .icon-team-inform {
@@ -332,8 +364,36 @@ ul {
   border-top: none;
 }
 
+.portfolio-cover-text {
+  color: #f4f4fd;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
 .portfolio-list-item {
   width: calc((100% - 48px) / 3);
+  position: relative;
+}
+
+.portfolio-list-item:hover .cashless-text-wrap {
+  transform: translate(0%);
+}
+
+.portfolio-cover-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.cashless-text-wrap {
+  position: absolute;
+  top: 0;
+  background: #4d5ae5;
+  padding: 40px 32px 164px;
+  transform: translateY(100%);
+  transition: transform 250ms linear;
 }
 
 .portfolio-title {
@@ -370,8 +430,8 @@ ul {
 }
 
 .conclusion-container {
-  /*display: flex;
-  align-items: center;*/
+  display: flex;
+  align-items: baseline;
 }
 
 .conclusion-logo-blue {
@@ -384,7 +444,7 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 16px;
-  /*margin-right: 269px;*/
+  margin-right: 269px;
 }
 
 .conclusion-logo {
@@ -409,9 +469,10 @@ ul {
 }
 
 .conclusion-social-media {
-  display: flex;
-  align-items: center;
+  /* display: flex;
+  /*align-items: center;
   justify-content: center;
+  flex-wrap: wrap;*/
 }
 
 .social-media-text {
@@ -422,6 +483,7 @@ ul {
   letter-spacing: 0.02em;
   margin-bottom: 16px;
   font-size: 16px;
+  /*display: flex;*/
 }
 
 .social-media-list {
@@ -442,4 +504,8 @@ ul {
   height: 40px;
   border-radius: 50%;
   background-color: #4d5ae5;
+}
+
+.social-media-item:hover {
+  background-color: #31d0aa;
 }
