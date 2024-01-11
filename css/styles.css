@@ -46,6 +46,8 @@ ul {
 .header-container {
   display: flex;
   align-items: center;
+  box-shadow: зі значенням 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .summit {
@@ -126,7 +128,7 @@ ul {
 }
 
 .current::after {
-  content: " ";
+  content: "";
   position: absolute;
   left: 0;
   bottom: -1px;
@@ -155,6 +157,7 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
   padding: 24px 0px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts {
@@ -169,6 +172,7 @@ ul {
 
 .top-container {
   margin: 0 auto;
+  max-width: 1440px;
 }
 
 .top {
@@ -212,7 +216,7 @@ ul {
   min-width: 169px;
   height: 56px;
   border: none;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .top-push:hover,
@@ -292,6 +296,7 @@ ul {
 .team-list-item {
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
+  0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .team-information {
@@ -317,6 +322,14 @@ ul {
   height: 100%;
   align-items: center;
   justify-content: center;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+
+}
+
+.team_inf-link:hover,
+.team_inf-link:focus {
+  background-color: #404bbf;
 }
 
 .team-inf-item {
@@ -324,11 +337,13 @@ ul {
   height: 40px;
   border-radius: 50%;
   background-color: #4d5ae5;
+  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon {
   width: 16px;
   height: 16px;
+  fill: #f4f4fd;
 }
 
 .team-post-title {
@@ -405,6 +420,12 @@ ul {
 .portfolio-list-item {
   width: calc((100% - 48px) / 3);
   position: relative;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-list-item:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  transform: translateY(0%);
 }
 
 .portfolio-list-item:hover .portfolio-cover-text {
@@ -457,6 +478,10 @@ ul {
 .conclusion {
   background-color: #2e2f42;
   padding: 100px 0;
+}
+
+.first-block {
+  margin-right: 120px
 }
 
 .conclusion-container {
@@ -527,6 +552,9 @@ ul {
   height: 100%;
   align-items: center;
   justify-content: center;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
 }
 
 .social-media-item {
@@ -539,4 +567,14 @@ ul {
 .social-media-item:hover {
   background-color: #31d0aa;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-media-link:hover,
+.social-media-link:focus {
+   background-color: #31d0aa;
+
+}
+
+.icon-conc {
+  fill: #f4f4fd;
 }
