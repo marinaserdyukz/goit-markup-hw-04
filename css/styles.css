@@ -486,7 +486,7 @@ ul {
 }
 
 .first-block {
-  /*margin-right: 120px;*/
+  margin-right: 120px;
 }
 
 .conclusion-container {
@@ -504,7 +504,7 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 17.5px;
-  margin-right: 340px;
+  /*margin-right: 340px;*/
 }
 
 .conclusion-logo {
@@ -527,13 +527,6 @@ ul {
   /*padding-top: 17.5px;*/
   width: 264px;
   max-width: 100%;
-}
-
-.conclusion-social-media {
-  /* display: flex;
-  /*align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;*/
 }
 
 .social-media-text {
