@@ -29,6 +29,8 @@ text-align: center;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+
+
 .thumb {
     width: 264px;
 
@@ -62,3 +64,30 @@ text-align: center;
 text-align: center;
 color: #434455;
 }
+
+.team-social-list {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.team-social-icon {
+ width: 16px;
+ height: 16px;
+ fill: #F4F4FD;
+}
+
+.team-social-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4D5AE5;
+}
+
+.team-item:hover .team-social-icon {
+    fill: #404BBF;
+}
+

@@ -47,5 +47,28 @@ color: #F4F4FD;
 font-weight: 500;
 }
 
+.footer-social-list {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
 
+.social-icon {
+ width: 24px;
+ height: 24px;
+ fill: #F4F4FD;
+}
 
+.footer-social-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4D5AE5;
+}
+
+.footer-social-item:hover {
+    background-color: #404BBF;
+}
