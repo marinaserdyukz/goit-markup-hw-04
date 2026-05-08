@@ -1,6 +1,6 @@
 .footer-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 
 
 }
@@ -10,7 +10,7 @@ max-width: 264px;
 display: flex;
 gap: 16px;
 flex-direction: column;
-
+margin-right: 120px;
 }
 
 .footer {
@@ -33,5 +33,19 @@ flex-direction: column;
 
 .footer-text {
     color: #F4F4FD;
-
 }
+
+.footer-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-right: auto 0;
+}
+
+.footer-social {
+color: #F4F4FD;
+font-weight: 500;
+}
+
+
+
