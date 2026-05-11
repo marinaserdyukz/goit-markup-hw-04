@@ -7,7 +7,7 @@
 
 .header {
   border-bottom: 1px solid #e7e9fc;
-  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  box-shadow: 0 2px 2px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .header-list {
@@ -51,16 +51,19 @@ flex-direction: row;
 }
 
 .header-list a:hover, 
-.header-list a:focus,
-.header-list a:active {
+.header-list a:focus{
     color: #404bbf;
 }
 
-.header-list a:active::after {
+.header-list a.current {
+    color: #404bbf;
+}
+
+.header-list a.current::after {
     content: "";
     position: absolute;
     left: 0;
-    bottom: -1px;
+    bottom: 0;
     width: 100%;
     height: 4px;
     background-color: #404bbf;
