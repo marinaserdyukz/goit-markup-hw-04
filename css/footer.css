@@ -38,12 +38,12 @@ margin-right: 120px;
 .footer-contacts {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 16px;
     margin-right: auto 0;
 }
 
 .footer-social {
-color: #F4F4FD;
+color: #ffffff;
 font-weight: 500;
 }
 
@@ -59,7 +59,7 @@ font-weight: 500;
  fill: #F4F4FD;
 }
 
-.footer-social-item {
+.social-icon-link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -67,8 +67,11 @@ font-weight: 500;
     height: 40px;
     border-radius: 50%;
     background-color: #4D5AE5;
+    transition: background-color 0.3s ease;
 }
 
-.footer-social-item:hover {
-    background-color: #404BBF;
+.social-icon-link:hover,
+.social-icon-link:focus {
+    background-color: #31D0AA;
 }
+

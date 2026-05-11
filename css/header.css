@@ -7,6 +7,7 @@
 
 .header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .header-list {
@@ -41,6 +42,7 @@ flex-direction: row;
 
 .header-list a {
     font-weight: 500;
+    transition: color 250ms ease;
 }
 
 .header-list a:hover, 
@@ -53,6 +55,7 @@ flex-direction: row;
     justify-content: space-between;
     align-items: center;
     gap: 40px;
+    transition: color 250ms ease;
 
 }
 
